@@ -1,7 +1,7 @@
 import pygame
 from tetris import TetrisGame
 from settings import BLOCK_SIZE, COLS, ROWS
-import time  # Import time module to control the popup duration
+import time 
 
 pygame.init()
 
@@ -12,7 +12,7 @@ clock = pygame.time.Clock()
 
 def show_popup(surface):
     font = pygame.font.SysFont("Arial", 40)
-    text = font.render("Developed by Siso", True, (255, 255, 255))  # White text
+    text = font.render("Developed by Siso", True, (255, 255, 255))  
     text_rect = text.get_rect(center=(surface.get_width() // 2, surface.get_height() // 2))
 
     surface.fill((0, 0, 0))
@@ -36,7 +36,7 @@ def main():
             
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_r and game.game_over:
-                    game = TetrisGame()  # Restart the game
+                    game = TetrisGame() 
         
         game.update_game(dt)
         
