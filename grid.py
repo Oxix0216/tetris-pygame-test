@@ -1,4 +1,3 @@
-# grid.py
 from settings import COLS, ROWS, BLOCK_SIZE
 import pygame
 
